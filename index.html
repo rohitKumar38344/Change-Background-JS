@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Color Changer</title>
+    <style>
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      button {
+        cursor: pointer;
+        border: none;
+        border-radius: 15px;
+        font-size: 1.5rem;
+        background: linear-gradient(45deg, red, orange);
+        color: #fff;
+        padding: 0.6rem 1rem;
+        box-shadow: 0 9px #444;
+      }
+
+      button:active {
+        box-shadow: 0 5px #444;
+        transform: translateY(4px);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="changeBgColorBtn">Change Background</button>
+    <script src="./script.js"></script>
+  </body>
+</html>
